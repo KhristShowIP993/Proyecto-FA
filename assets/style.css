@@ -1,4 +1,23 @@
 *{
     margin: 1px;
-    background-color: #F0F0F0;
+}
+
+.DatosGenerales{
+    background-color: aqua;
+}
+
+.Nticket_FechaHora{
+    background-color: red;
+}
+
+.SeleccioneAccion_SeleccioneBU{
+    background-color: brown;
+}
+
+.SeleccionePropietaro_NombreTecnico{
+    background-color: blueviolet;
+}
+
+.DirecciónyUbicación{
+    background-color: chocolate;
 }
