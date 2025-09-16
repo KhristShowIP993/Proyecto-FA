@@ -1,130 +1,170 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <title>Inserte titulo</title>
-        <link rel="stylesheet" href="/assets/style.css">
-        <meta charset="UTF-8">
-    </head>
-    <body>
-        <header>
-        </header>
-        <main>
-            <div class="DatosGenerales"> <!--Primer bloque Formulario-->
-                <form>
-                    <fieldset>
-                        <legend>Datos Generales </legend>
 
-                        <div class="Nticket_FechaHora">
-                            <div>
-                                <label for="nticket">Nro. de ticket</label><br>
-                                    <input type="text" id="nticket" placeholder="Inserta N° ticket">
-                                    <img src="/assets/img/Nueva carpeta/lupa.png" id="lupaImg" alt="lupa">
-                            </div>
-                            <div>
-                                <label for="FechaHora">Fecha Hora</label><br>
-                                    <input type="datetime-local" id="Fecha&hora" name="FechaHora">
-                            </div>
+<head>
+    <title>Inserte titulo</title>
+    <link rel="stylesheet" href="/assets/style.css" />
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="DatosGenerales">
+            <!--Primer bloque Formulario-->
+            <form>
+                <fieldset>
+                    <legend>Datos Generales</legend>
+
+                    <div class="Nticket_FechaHora">
+                        <div>
+                            <label for="nticket">Nro. de ticket</label><br />
+                            <input type="text" id="nticket" placeholder="Inserta N° ticket" />
+                            <img src="/assets/img/Nueva carpeta/lupa.png" id="lupaImg" alt="lupa" />
+                        </div>
+                        <div>
+                            <label for="FechaHora">Fecha Hora</label><br />
+                            <input type="datetime-local" id="Fecha&hora" name="FechaHora" />
+                        </div>
+                    </div>
+
+                    <div class="SeleccioneAccion_SeleccioneBU">
+                        <div>
+                            <label for="SeleccioneAccion">Seleccione Acción</label> <br />
+                            <select id="SeleccioneAccion" name="SeleccioneAccion">
+                                <option>
+                                    ALTA: Incremento / OnBoaring, asociada a una WO
+                                </option>
+                                <option>REMASTERIZACION: Incidencia</option>
+                                <option>
+                                    RENOVACION: Renovación Tecnológica, asociado a una WO
+                                </option>
+                                <option>
+                                    SOPORTE MDS: Exclusivo para el equipo de Mesa de Servicio
+                                </option>
+                                <option>
+                                    SOPORTE TERRENO: Exclusivo para el equipo de Soporte Terreno
+                                    (INC / WO)
+                                </option>
+                                <option selected>Seleccione</option>
+                                <!-- el valor "selected" queda por defecto seleccionado-->
+                            </select>
+                        </div>
+                        <div>
+                            <label for="SeleccioneBU">Seleccione BU</label><br />
+                            <select id="SeleccioneBU" name="SeleccioneBU">
+                                <option>CHILE - CORPORATIVO</option>
+                                <option>CHILE - FINANCIERO</option>
+                                <option>CHILE - RETAIL</option>
+                                <option>CHILE - SODIMAC</option>
+                                <option>CHILE - TOTTUS</option>
+                                <option>PERU - CORPORATIVO</option>
+                                <option>PERU - FINANCIERO</option>
+                                <option>PERU - RETAIL</option>
+                                <option>PERU - SODIMAC</option>
+                                <option>PERU - TOTTUS</option>
+                                <option>COLOMBIA - BANCO</option>
+                                <option>COLOMBIA - FALABELLA SERVICIOS</option>
+                                <option>COLOMBIA - IKEA</option>
+                                <option>COLOMBIA - SEGUROS</option>
+                                <option selected>Seleccione</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="SeleccionePropietaro_NombreTecnico">
+                        <div>
+                            <label for="SeleccionePropietario">Seleccione Propietario</label><br />
+                            <select id="SeleccionePropietario" name="SeleccionePropietario">
+                                <option>ARRIENDO</option>
+                                <option>HP (equipos HP)</option>
+                                <option>QUINTEC (equipos LENOVO)</option>
+                                <option selected>Seleccione</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="NombreTecnico">Nombre del Técnico</label><br />
+                            <input type="text" id="NombreTecnico" value="MAURICIO ANDRES MORA SALGADO" readonly />
+                        </div>
+                    </div>
+
+                    <div class="DirecciónyUbicación">
+                        <label for="DirecciónyUbicación">Dirección y/o Ubicación</label><br />
+                        <input type="text" id="DirecciónyUbicación" placeholder="Ingresa la dirección del comercio" />
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="DatosEquipo">
+            <!--Segundo bloque Formulario-->
+            <form>
+                <fieldset>
+                    <legend>Datos Equipo</legend>
+
+                    <div class="MarcaModeloSerie">
+                        <div class="MarcaPC">
+                            <label for="MarcaPC">Marca PC</label><br>
+                            <input type="text" placeholder="Inserte Marca PC" />
                         </div>
 
-                        <div class="SeleccioneAccion_SeleccioneBU">
-                            <div>
-                            <label for="SeleccioneAccion">Seleccione Acción</label> <br>
-                                <select id="SeleccioneAccion" name="SeleccioneAccion">
-                                        <option>ALTA: Incremento / OnBoaring, asociada a una WO</option>
-                                        <option>REMASTERIZACION: Incidencia</option>
-                                        <option>RENOVACION: Renovación Tecnológica, asociado a una WO</option>
-                                        <option>SOPORTE MDS: Exclusivo para el equipo de Mesa de Servicio</option>
-                                        <option>SOPORTE TERRENO: Exclusivo para el equipo de Soporte Terreno (INC / WO)</option>
-                                        <option selected>Seleccione</option> <!-- el valor "selected" queda por defecto seleccionado-->
-                                </select>
-                            </div>
-                                <div>
-                                    <label for="SeleccioneBU">Seleccione BU</label><br>
-                                    <select id="SeleccioneBU" name="SeleccioneBU">
-                                        <option>CHILE - CORPORATIVO</option>
-                                        <option>CHILE - FINANCIERO</option>
-                                        <option>CHILE - RETAIL</option>
-                                        <option>CHILE - SODIMAC</option>
-                                        <option>CHILE - TOTTUS</option>
-                                        <option>PERU - CORPORATIVO</option>
-                                        <option>PERU - FINANCIERO</option>
-                                        <option>PERU - RETAIL</option>
-                                        <option>PERU - SODIMAC</option>
-                                        <option>PERU - TOTTUS</option>
-                                        <option>COLOMBIA - BANCO</option>
-                                        <option>COLOMBIA - FALABELLA SERVICIOS</option>
-                                        <option>COLOMBIA - IKEA</option>
-                                        <option>COLOMBIA - SEGUROS</option>
-                                        <option selected>Seleccione</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="SeleccionePropietaro_NombreTecnico">
-                                <div>
-                                    <label for="SeleccionePropietario">Seleccione Propietario</label><br>
-                                    <select id="SeleccionePropietario" name="SeleccionePropietario">
-                                        <option>ARRIENDO</option>
-                                        <option>HP (equipos HP)</option>
-                                        <option>QUINTEC (equipos LENOVO)</option>
-                                        <option selected>Seleccione</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <label for="NombreTecnico">Nombre del Técnico</label><br>
-                                    <input type="text" id="NombreTecnico" value="MAURICIO ANDRES MORA SALGADO" readonly>
-                                </div>
-                            </div>
-
-                            <div class="DirecciónyUbicación">
-                                <label for="DirecciónyUbicación">Dirección y/o Ubicación</label><br>
-                                <input type="text" id="DirecciónyUbicación" placeholder="Ingresa la dirección del comercio">
-                            </div>
-                    </fieldset>
-                </form>
-            </div>
-            <div class="DatosEquipo"> <!--Segundo bloque Formulario-->
-                <form>
-                    <fieldset>
-                        <legend>Datos Equipo</legend>
-                        
-                        <div class="MarcaModeloSerie">
-                            <div class="MarcaPC">
-                                <label for="MarcaPC">Marca PC</label><br>
-                                <input type="text" placeholder="Inserte Marca PC">
-                            </div>
-
-                            <div class="ModeloPC">
-                                <label for="ModeloPC">Modelo PC</label><br>
-                                <input type="text" placeholder="Inserte Modelo PC">
-                            </div>
-
-                            <div class="SeriePC">
-                                <label for="SeriePC">Serie PC</label><br>
-                                <input type="text" placeholder="Inserte Serie PC">
-                            </div>
+                        <div class="ModeloPC">
+                            <label for="ModeloPC">Modelo PC</label><br>
+                            <input type="text" placeholder="Inserte Modelo PC" />
                         </div>
 
-                        <div class="IPHostChasis">
-                            <div class="IP">
-                                <label for="IP">IP</label><br>
-                                <input type="text" placeholder="Ingrese IP">
-                            </div>
-                            <div class="Host">
-                                <label for="Host">Host</label><br>
-                                <input type="text" placeholder="INserte nombre de equipo">
-                            </div>
-                            
-                            <div class="TipoChasis">
-                                <label for="TipoChasis">Tipo Chasis</label><br>
-                                <input type="text" placeholder="Inserte tipo de chasis">
+                        <div class="SeriePC">
+                            <label for="SeriePC">Serie PC</label><br>
+                            <input type="text" placeholder="Inserte Serie PC" />
                         </div>
+                    </div>
+
+                    <div class="IPHostChasis">
+                        <div class="IP">
+                            <label for="IP">IP</label><br>
+                            <input type="text" placeholder="Ingrese IP" />
                         </div>
-                    </fieldset>
-                </form>
-            </div>
-        </main>
-        <footer>
-        </footer> 
-    </body>
-</html> 
+                        <div class="Host">
+                            <label for="Host">Host</label><br>
+                            <input type="text" placeholder="Inserte nombre de equipo" />
+                        </div>
+                        <div class="TipoChasis">
+                            <label for="TipoChasis">Tipo Chasis</label><br>
+                            <input type="text" placeholder="Inserte tipo de chasis" />
+                        </div>
+
+                        <div class="SistemaVersionIntune">
+                            <div class="SistemaOperativo">
+                                <label for="SIstemaOperativo">Sistema Operativo</label><br>
+                                <input type="text" placeholder="Ingrese Sistema Operativo" />
+                            </div>
+                            <div class="VersiónSistemaOperativo">
+                                <label for="VersiónSistemaOperativo">Versión de Sistema Operativo</label><br>
+                                <input type="text" placeholder="Inserte versión SO" />
+                            </div>
+                            <div class="Intune">
+                                <label for="Intune">INTUNE</label><br>
+                                <input type="text" placeholder="Inserte estado Intune" />
+                            </div>
+                        </div>
+                        <div class="">
+                            <label for=""></label><br />
+                            <input type="text" placeholder="Ingrese" />
+                        </div>
+                        <div class="">
+                            <label for=""></label><br />
+                            <input type="text" placeholder="Inserte " />
+                        </div>
+                        <div class="">
+                            <label for=""></label><br />
+                            <input type="text" placeholder="Inserte " />
+                        </div>
+                    </div>
+        </div>
+        </fieldset>
+        </form>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
