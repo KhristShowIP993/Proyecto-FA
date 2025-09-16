@@ -13,22 +13,66 @@
                 <form>
                     <fieldset>
                         <legend>Datos Generales </legend>
-                            <br>
-                                <label for="nticket">Nro. de ticket</label> <br>
+
+                        <div class="Nticket&FechaHora">
+                            <div>
+                                <label for="nticket">Nro. de ticket</label><br>
                                     <input type="text" id="nticket" placeholder="Inserta N° ticket">
-                                <img src="/assets/img/Nueva carpeta/lupa.png" id="lupaImg" alt="lupa">
+                                    <img src="/assets/img/Nueva carpeta/lupa.png" id="lupaImg" alt="lupa">
                             </div>
-                        <div class="SeleccioneAccion">
+                            <div>
+                                <label for="FechaHora">Fecha Hora</label><br>
+                                    <input type="datetime-local" id="Fecha&hora" name="FechaHora">
+                            </div>
+                        </div>
+
+                        <div class="SeleccioneAccion&SeleccioneBU">
+                            <div>
                             <label for="SeleccioneAccion">Seleccione Acción</label> <br>
-                           <select id="SeleccioneAccion" name="SeleccioneAccion">
-                                <option>ALTA: Incremento / OnBoaring, asociada a una WO</option>
-                                <option>REMASTERIZACION: Incidencia</option>
-                                <option>RENOVACION: Renovación Tecnológica, ascociado a una WO</option>
-                                <option>SOPORTE MDS: Exclusivo para el equipo de Mesa de Servicio</option>
-                                <option>SOPORTE TERRENO: Exclusivo para el equipo de Soporte Terreno (INC / WO)</option>
-                                <option selected>Seleccione</option> <!-- el valor "selected" queda por defecto seleccionado-->
-                        </select>
-                    </div>
+                                <select id="SeleccioneAccion" name="SeleccioneAccion">
+                                        <option>ALTA: Incremento / OnBoaring, asociada a una WO</option>
+                                        <option>REMASTERIZACION: Incidencia</option>
+                                        <option>RENOVACION: Renovación Tecnológica, asociado a una WO</option>
+                                        <option>SOPORTE MDS: Exclusivo para el equipo de Mesa de Servicio</option>
+                                        <option>SOPORTE TERRENO: Exclusivo para el equipo de Soporte Terreno (INC / WO)</option>
+                                        <option selected>Seleccione</option> <!-- el valor "selected" queda por defecto seleccionado-->
+                                </select>
+                            </div>
+                                <div>
+                                    <label for="SeleccioneBU">Seleccione BU</label><br>
+                                    <select id="SeleccioneBU" name="SeleccioneBU">
+                                        <option>CHILE - CORPORATIVO</option>
+                                        <option>CHILE - FINANCIERO</option>
+                                        <option>CHILE - RETAIL</option>
+                                        <option>CHILE - SODIMAC</option>
+                                        <option>CHILE - TOTTUS</option>
+                                        <option>PERU - CORPORATIVO</option>
+                                        <option>PERU - FINANCIERO</option>
+                                        <option>PERU - RETAIL</option>
+                                        <option>PERU - SODIMAC</option>
+                                        <option>PERU - TOTTUS</option>
+                                        <option>COLOMBIA - BANCO</option>
+                                        <option>COLOMBIA - FALABELLA SERVICIOS</option>
+                                        <option>COLOMBIA - IKEA</option>
+                                        <option>COLOMBIA - SEGUROS</option>
+                                        <option selected>Seleccione</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="SeleccionePropietaroi&NombreTecnico">
+                                <div>
+                                    <label for="SeleccionePropietario">Seleccione Propietario</label><br>
+                                    <select id="SeleccionePropietario" name="SeleccionePropietario">
+                                        <option>ARRIENDO</option>
+                                        <option>HP (equipos HP)</option>
+                                        <option>QUINTEC (equipos LENOVO)</option>
+                                        <option selected>Seleccione</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
                     </fieldset>
                 </form>
             </div>
