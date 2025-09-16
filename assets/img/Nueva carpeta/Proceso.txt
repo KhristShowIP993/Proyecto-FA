@@ -1,0 +1,14 @@
+(ACTUALIZAR)
+16:47:36 Actualizando datos ... 
+16:47:49 Datos actualizados. 
+
+(COPIADO A DOC TXT)
+16:47:59 Copiando Clipboard ... 
+16:47:59 Texto copiado al portapapeles de Windows. 
+
+(GRABAR DATOS)
+16:52:39 Iniciando Grabado ... 
+16:52:41 Registro guardado correctamente. 
+16:52:41 Copiando registro en JIRA ... 
+16:52:42 Registro copiado en JIRA correctamente. 
+16:52:42 Fin Grabado. 
