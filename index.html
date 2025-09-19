@@ -11,7 +11,7 @@
     <header></header>
     <main>
         <div class="DatosGenerales">
-            <!--Primer bloque Formulario-->
+            <!--Primer bloque Formulario datos para completar-->
             <form>
                 <fieldset>
                     <legend>Datos Generales</legend>
@@ -19,18 +19,18 @@
                     <div class="Nticket_FechaHora">
                         <div>
                             <label for="nticket">Nro. de ticket</label><br />
-                            <input type="text" id="nticket" placeholder="Inserta N° ticket" />
-                            <img src="/assets/img/Nueva carpeta/lupa.png" id="lupaImg" alt="lupa" />
+                            <input type="text" id="nticket" placeholder="Inserta N° ticket">
+                            <img src="/assets/img/Nueva carpeta/lupa.png" id="lupaImg" alt="lupa">
                         </div>
                         <div>
-                            <label for="FechaHora">Fecha Hora</label><br />
-                            <input type="datetime-local" id="Fecha&hora" name="FechaHora" />
+                            <label for="FechaHora">Fecha Hora</label><br>
+                            <input type="datetime-local" id="Fecha&hora" name="FechaHora">
                         </div>
                     </div>
 
                     <div class="SeleccioneAccion_SeleccioneBU">
                         <div>
-                            <label for="SeleccioneAccion">Seleccione Acción</label> <br />
+                            <label for="SeleccioneAccion">Seleccione Acción</label><br>
                             <select id="SeleccioneAccion" name="SeleccioneAccion">
                                 <option>
                                     ALTA: Incremento / OnBoaring, asociada a una WO
@@ -51,7 +51,7 @@
                             </select>
                         </div>
                         <div>
-                            <label for="SeleccioneBU">Seleccione BU</label><br />
+                            <label for="SeleccioneBU">Seleccione BU</label><br>
                             <select id="SeleccioneBU" name="SeleccioneBU">
                                 <option>CHILE - CORPORATIVO</option>
                                 <option>CHILE - FINANCIERO</option>
@@ -74,7 +74,7 @@
 
                     <div class="SeleccionePropietaro_NombreTecnico">
                         <div>
-                            <label for="SeleccionePropietario">Seleccione Propietario</label><br />
+                            <label for="SeleccionePropietario">Seleccione Propietario</label><br>
                             <select id="SeleccionePropietario" name="SeleccionePropietario">
                                 <option>ARRIENDO</option>
                                 <option>HP (equipos HP)</option>
@@ -83,80 +83,88 @@
                             </select>
                         </div>
                         <div>
-                            <label for="NombreTecnico">Nombre del Técnico</label><br />
-                            <input type="text" id="NombreTecnico" value="MAURICIO ANDRES MORA SALGADO" readonly />
+                            <label for="NombreTecnico">Nombre del Técnico</label><br>
+                            <input type="text" id="NombreTecnico" value="MAURICIO ANDRES MORA SALGADO" readonly>
                         </div>
                     </div>
 
                     <div class="DirecciónyUbicación">
-                        <label for="DirecciónyUbicación">Dirección y/o Ubicación</label><br />
-                        <input type="text" id="DirecciónyUbicación" placeholder="Ingresa la dirección del comercio" />
+                        <label for="DirecciónyUbicación">Dirección y/o Ubicación</label><br>
+                        <input type="text" id="DirecciónyUbicación" placeholder="Ingresa la dirección del comercio">
                     </div>
                 </fieldset>
             </form>
         </div>
         <div class="DatosEquipo">
-            <!--Segundo bloque Formulario-->
+            <!--Segundo bloque Formulario datos que deben ser copiados del equipo-->
             <form>
                 <fieldset>
                     <legend>Datos Equipo</legend>
-
+                    <!--Primer segmento-->
                     <div class="MarcaModeloSerie">
                         <div class="MarcaPC">
                             <label for="MarcaPC">Marca PC</label><br>
-                            <input type="text" placeholder="Inserte Marca PC" />
+                            <input type="text" placeholder="Inserte Marca PC">
                         </div>
-
                         <div class="ModeloPC">
                             <label for="ModeloPC">Modelo PC</label><br>
-                            <input type="text" placeholder="Inserte Modelo PC" />
+                            <input type="text" placeholder="Inserte Modelo PC">
                         </div>
-
                         <div class="SeriePC">
                             <label for="SeriePC">Serie PC</label><br>
-                            <input type="text" placeholder="Inserte Serie PC" />
+                            <input type="text" placeholder="Inserte Serie PC">
                         </div>
                     </div>
-
+                    <!--Segundo  segmento-->
+                    <div class="SegundoTercerSegmento"> <!--Padre para Segundo y tercer segmento. OU Computer debe cubrir estos dos segmentos-->
                     <div class="IPHostChasis">
                         <div class="IP">
                             <label for="IP">IP</label><br>
-                            <input type="text" placeholder="Ingrese IP" />
+                            <input type="text" placeholder="Ingrese IP">
                         </div>
                         <div class="Host">
                             <label for="Host">Host</label><br>
-                            <input type="text" placeholder="Inserte nombre de equipo" />
+                            <input type="text" placeholder="Inserte nombre de equipo">
                         </div>
                         <div class="TipoChasis">
                             <label for="TipoChasis">Tipo Chasis</label><br>
-                            <input type="text" placeholder="Inserte tipo de chasis" />
+                            <input type="text" placeholder="Inserte tipo de chasis">
                         </div>
-
+                        <!--Tercer segmento-->
                         <div class="SistemaVersionIntune">
                             <div class="SistemaOperativo">
                                 <label for="SIstemaOperativo">Sistema Operativo</label><br>
-                                <input type="text" placeholder="Ingrese Sistema Operativo" />
+                                <input type="text" placeholder="Ingrese Sistema Operativo">
                             </div>
                             <div class="VersiónSistemaOperativo">
                                 <label for="VersiónSistemaOperativo">Versión de Sistema Operativo</label><br>
-                                <input type="text" placeholder="Inserte versión SO" />
+                                <input type="text" placeholder="Inserte versión SO">
                             </div>
                             <div class="Intune">
                                 <label for="Intune">INTUNE</label><br>
-                                <input type="text" placeholder="Inserte estado Intune" />
+                                <input type="text" placeholder="Inserte estado Intune">
                             </div>
                         </div>
-                        <div class="">
-                            <label for=""></label><br />
-                            <input type="text" placeholder="Ingrese" />
                         </div>
-                        <div class="">
-                            <label for=""></label><br />
-                            <input type="text" placeholder="Inserte " />
+                        <div class="OUComputer">
+                            <label for="OUComputer">OU Computer</label><br>
+                            <input type="text" placeholder="Inserte OU">
                         </div>
-                        <div class="">
-                            <label for=""></label><br />
-                            <input type="text" placeholder="Inserte " />
+                    </div>
+                        <!--Cuarto segmento-->
+                        <div class="CuartoQuintoSegmento"> <!--Padre para Segundo y tercer segmento. OU Computer debe cubrir estos dos segmentos-->
+                        <div class="NombreUsuario">
+                            <label for="NombreUsuario">Nombre de Usuario</label><br>
+                            <input type="text" placeholder="Ingrese nombre de Usuario">
+                        </div>
+                        <div class="Negocio">
+                            <label for="Negocio">Negocio</label><br>
+                            <input type="text" placeholder="Inserte Negocio ">
+                        </div>
+                        <div class="Dominio">
+                            <label for="Dominio">Dominio de usuario</label><br>
+                            <input type="text" placeholder="Inserte Dominio de usuario">
+                        </div>
                         </div>
                     </div>
         </div>
