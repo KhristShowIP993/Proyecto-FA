@@ -1,25 +1,42 @@
 *{
-    margin: 1px;
+    margin:0;
+}
+
+main{
+    padding: 1px;
 }
 
 .DatosGenerales{
+    width: 100%;
     background-color: aqua;
+}
+
+.formBox{
+    padding: 5px;
+}
+
+.PrimerBloque{
+    display: flex;
 }
 
 .Nticket_FechaHora{
     background-color: red;
+    width: 25%;
 }
 
 .SeleccioneAccion_SeleccioneBU{
     background-color: brown;
+     width: 25%;
 }
 
 .SeleccionePropietaro_NombreTecnico{
     background-color: blueviolet;
+    width: 25%;
 }
 
 .DirecciónyUbicación{
     background-color: chocolate;
+    width: 25%;
 }
 
 .DatosEquipo{

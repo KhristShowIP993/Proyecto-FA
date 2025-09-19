@@ -15,102 +15,103 @@
             <form>
                 <fieldset>
                     <legend>Datos Generales</legend>
+                    <div class="PrimerBloque"> <!--Este es el padre de los elementos del primer bloque-->
+                        <div class="Nticket_FechaHora formBox">
+                            <div>
+                                <label for="nticket">Nro. de ticket</label><br />
+                                <input type="text" id="nticket" placeholder="Inserta N° ticket">
+                                <img src="/assets/img/Nueva carpeta/lupa.png" id="lupaImg" alt="lupa">
+                            </div>
+                            <div>
+                                <label for="FechaHora">Fecha Hora</label><br>
+                                <input type="datetime-local" id="FechaHora" name="FechaHora">
+                            </div>
+                        </div>
 
-                    <div class="Nticket_FechaHora">
-                        <div>
-                            <label for="nticket">Nro. de ticket</label><br />
-                            <input type="text" id="nticket" placeholder="Inserta N° ticket">
-                            <img src="/assets/img/Nueva carpeta/lupa.png" id="lupaImg" alt="lupa">
+                        <div class="SeleccioneAccion_SeleccioneBU formBox">
+                            <div>
+                                <label for="SeleccioneAccion">Seleccione Acción</label><br>
+                                <select id="SeleccioneAccion" name="SeleccioneAccion">
+                                    <option>
+                                        ALTA: Incremento / OnBoaring, asociada a una WO
+                                    </option>
+                                    <option>REMASTERIZACION: Incidencia</option>
+                                    <option>
+                                        RENOVACION: Renovación Tecnológica, asociado a una WO
+                                    </option>
+                                    <option>
+                                        SOPORTE MDS: Exclusivo para el equipo de Mesa de Servicio
+                                    </option>
+                                    <option>
+                                        SOPORTE TERRENO: Exclusivo para el equipo de Soporte Terreno
+                                        (INC / WO)
+                                    </option>
+                                    <option selected>Seleccione</option>
+                                    <!-- el valor "selected" queda por defecto seleccionado-->
+                                </select>
+                            </div>
+                            <div>
+                                <label for="SeleccioneBU">Seleccione BU</label><br>
+                                <select id="SeleccioneBU" name="SeleccioneBU">
+                                    <option>CHILE - CORPORATIVO</option>
+                                    <option>CHILE - FINANCIERO</option>
+                                    <option>CHILE - RETAIL</option>
+                                    <option>CHILE - SODIMAC</option>
+                                    <option>CHILE - TOTTUS</option>
+                                    <option>PERU - CORPORATIVO</option>
+                                    <option>PERU - FINANCIERO</option>
+                                    <option>PERU - RETAIL</option>
+                                    <option>PERU - SODIMAC</option>
+                                    <option>PERU - TOTTUS</option>
+                                    <option>COLOMBIA - BANCO</option>
+                                    <option>COLOMBIA - FALABELLA SERVICIOS</option>
+                                    <option>COLOMBIA - IKEA</option>
+                                    <option>COLOMBIA - SEGUROS</option>
+                                    <option selected>Seleccione</option>
+                                </select>
+                            </div>
                         </div>
-                        <div>
-                            <label for="FechaHora">Fecha Hora</label><br>
-                            <input type="datetime-local" id="Fecha&hora" name="FechaHora">
-                        </div>
-                    </div>
 
-                    <div class="SeleccioneAccion_SeleccioneBU">
-                        <div>
-                            <label for="SeleccioneAccion">Seleccione Acción</label><br>
-                            <select id="SeleccioneAccion" name="SeleccioneAccion">
-                                <option>
-                                    ALTA: Incremento / OnBoaring, asociada a una WO
-                                </option>
-                                <option>REMASTERIZACION: Incidencia</option>
-                                <option>
-                                    RENOVACION: Renovación Tecnológica, asociado a una WO
-                                </option>
-                                <option>
-                                    SOPORTE MDS: Exclusivo para el equipo de Mesa de Servicio
-                                </option>
-                                <option>
-                                    SOPORTE TERRENO: Exclusivo para el equipo de Soporte Terreno
-                                    (INC / WO)
-                                </option>
-                                <option selected>Seleccione</option>
-                                <!-- el valor "selected" queda por defecto seleccionado-->
-                            </select>
+                        <div class="SeleccionePropietaro_NombreTecnico formBox">
+                            <div>
+                                <label for="SeleccionePropietario">Seleccione Propietario</label><br>
+                                <select id="SeleccionePropietario" name="SeleccionePropietario">
+                                    <option>ARRIENDO</option>
+                                    <option>HP (equipos HP)</option>
+                                    <option>QUINTEC (equipos LENOVO)</option>
+                                    <option selected>Seleccione</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="NombreTecnico">Nombre del Técnico</label><br>
+                                <input type="text" id="NombreTecnico" value="MAURICIO ANDRES MORA SALGADO" readonly>
+                            </div>
                         </div>
-                        <div>
-                            <label for="SeleccioneBU">Seleccione BU</label><br>
-                            <select id="SeleccioneBU" name="SeleccioneBU">
-                                <option>CHILE - CORPORATIVO</option>
-                                <option>CHILE - FINANCIERO</option>
-                                <option>CHILE - RETAIL</option>
-                                <option>CHILE - SODIMAC</option>
-                                <option>CHILE - TOTTUS</option>
-                                <option>PERU - CORPORATIVO</option>
-                                <option>PERU - FINANCIERO</option>
-                                <option>PERU - RETAIL</option>
-                                <option>PERU - SODIMAC</option>
-                                <option>PERU - TOTTUS</option>
-                                <option>COLOMBIA - BANCO</option>
-                                <option>COLOMBIA - FALABELLA SERVICIOS</option>
-                                <option>COLOMBIA - IKEA</option>
-                                <option>COLOMBIA - SEGUROS</option>
-                                <option selected>Seleccione</option>
-                            </select>
-                        </div>
-                    </div>
 
-                    <div class="SeleccionePropietaro_NombreTecnico">
-                        <div>
-                            <label for="SeleccionePropietario">Seleccione Propietario</label><br>
-                            <select id="SeleccionePropietario" name="SeleccionePropietario">
-                                <option>ARRIENDO</option>
-                                <option>HP (equipos HP)</option>
-                                <option>QUINTEC (equipos LENOVO)</option>
-                                <option selected>Seleccione</option>
-                            </select>
+                        <div class="DirecciónyUbicación formBox">
+                            <label for="DirecciónyUbicación">Dirección y/o Ubicación</label><br>
+                            <input type="text" id="DirecciónyUbicación" placeholder="Ingresa la dirección del comercio">
                         </div>
-                        <div>
-                            <label for="NombreTecnico">Nombre del Técnico</label><br>
-                            <input type="text" id="NombreTecnico" value="MAURICIO ANDRES MORA SALGADO" readonly>
-                        </div>
-                    </div>
-
-                    <div class="DirecciónyUbicación">
-                        <label for="DirecciónyUbicación">Dirección y/o Ubicación</label><br>
-                        <input type="text" id="DirecciónyUbicación" placeholder="Ingresa la dirección del comercio">
                     </div>
                 </fieldset>
             </form>
         </div>
-        <div class="DatosEquipo">
-            <!--Segundo bloque Formulario datos que deben ser copiados del equipo-->
+
+        <div class="DatosEquipo"><!--Segundo bloque Formulario datos que deben ser copiados del equipo-->
             <form>
                 <fieldset>
                     <legend>Datos Equipo</legend>
                     <!--Primer segmento-->
                     <div class="MarcaModeloSerie">
-                        <div class="MarcaPC">
+                        <div class="MarcaPC formBox">
                             <label for="MarcaPC">Marca PC</label><br>
                             <input type="text" placeholder="Inserte Marca PC">
                         </div>
-                        <div class="ModeloPC">
+                        <div class="ModeloPC formBox">
                             <label for="ModeloPC">Modelo PC</label><br>
                             <input type="text" placeholder="Inserte Modelo PC">
                         </div>
-                        <div class="SeriePC">
+                        <div class="SeriePC formBox">
                             <label for="SeriePC">Serie PC</label><br>
                             <input type="text" placeholder="Inserte Serie PC">
                         </div>
@@ -118,36 +119,36 @@
                     <!--Segundo  segmento-->
                     <div class="SegundoTercerSegmento">
                         <!--Padre para Segundo y tercer segmento. OU Computer debe cubrir estos dos segmentos-->
-                        <div class="IPHostChasis">
-                            <div class="IP">
+                        <div class="IPHostChasis formBox">
+                            <div class="IP formBox">
                                 <label for="IP">IP</label><br>
                                 <input type="text" placeholder="Ingrese IP">
                             </div>
-                            <div class="Host">
+                            <div class="Host formBox">
                                 <label for="Host">Host</label><br>
                                 <input type="text" placeholder="Inserte nombre de equipo">
                             </div>
-                            <div class="TipoChasis">
+                            <div class="TipoChasis formBox">
                                 <label for="TipoChasis">Tipo Chasis</label><br>
                                 <input type="text" placeholder="Inserte tipo de chasis">
                             </div>
                             <!--Tercer segmento-->
                             <div class="SistemaVersionIntune">
-                                <div class="SistemaOperativo">
+                                <div class="SistemaOperativo formBox">
                                     <label for="SIstemaOperativo">Sistema Operativo</label><br>
                                     <input type="text" placeholder="Ingrese Sistema Operativo">
                                 </div>
-                                <div class="VersiónSistemaOperativo">
+                                <div class="VersiónSistemaOperativo formBox">
                                     <label for="VersiónSistemaOperativo">Versión de Sistema Operativo</label><br>
                                     <input type="text" placeholder="Inserte versión SO">
                                 </div>
-                                <div class="Intune">
+                                <div class="Intune formBox">
                                     <label for="Intune">INTUNE</label><br>
                                     <input type="text" placeholder="Inserte estado Intune">
                                 </div>
                             </div>
                         </div>
-                        <div class="OUComputer">
+                        <div class="OUComputer formBox">
                             <label for="OUComputer">OU Computer</label><br>
                             <input type="text" placeholder="Inserte OU">
                         </div>
@@ -155,29 +156,29 @@
                     <!--Cuarto segmento-->
                     <div class="CuartoQuintoSegmento">
                         <!--Padre para Segundo y tercer segmento. OU Computer debe cubrir estos dos segmentos-->
-                        <div class="NombreUsuario">
+                        <div class="NombreUsuario formBox">
                             <label for="NombreUsuario">Nombre de Usuario</label><br>
                             <input type="text" placeholder="Ingrese nombre de Usuario">
                         </div>
-                        <div class="Negocio">
+                        <div class="Negocio formBox">
                             <label for="Negocio">Negocio</label><br>
                             <input type="text" placeholder="Inserte Negocio ">
                         </div>
-                        <div class="Dominio">
+                        <div class="Dominio formBox">
                             <label for="Dominio">Dominio de usuario</label><br>
                             <input type="text" placeholder="Inserte Dominio de usuario">
                         </div>
-                        <div class="Monitor">
-                            <label for="Monitor">Monitor</label>
+                        <div class="Monitor formBox">
+                            <label for="Monitor">Monitor</label><br>
                             <input type="text" placeholder="Inserte Monitor(es)">
                         </div>
                     </div>
                     <div class="QuintoSegmento">
-                        <div class="Matriz">
+                        <div class="Matriz formBox">
                             <label for="Matriz">Es Matriz Corporativa</label><br>
                             <input type="text" placeholder="Inserte Matriz">
                         </div>
-                        <div class="MatrizInstalada">
+                        <div class="MatrizInstalada formBox">
                             <label for="MatrizInstalada"> Matriz Instalada</label><br>
                             <input type="text" placeholder="Inserte Matriz Instalada">
                         </div>
